@@ -8,6 +8,9 @@
   <title>Batman</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 
@@ -52,8 +55,46 @@
     </div>
   </header>
 
-  <main class="main main__index">
-    <img class="logo" src="image/logo.png" alt="Логотип к фильму бэтман" width="329" height="235">
+  <main class="main main__slider">
+    <div class="slider-main swiper">
+      <ul class="slider-main__list swiper-wrapper">
+        <li class="slider-main__item swiper-slide">
+          <img src="photo/photo01.jpg" alt="Фрагмент из фильма" class="slider-main__img">
+        </li>
+
+        <li class="slider-main__item swiper-slide">
+          <img src="photo/photo02.jpg" alt="Фрагмент из фильма" class="slider-main__img">
+        </li>
+
+        <li class="slider-main__item swiper-slide">
+          <img src="photo/photo03.jpg" alt="Фрагмент из фильма" class="slider-main__img">
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="pagination">
+      <button class="pagination__array"></button>
+
+      <div class="slider-thumbs swiper">
+        <ul class="slider-thumbs__list swiper-wrapper">
+          <li class="slider-thumbs__item swiper-slide">
+            <img src="photo/photo01-thumbs.jpg" alt="Фрагмент из фильма" class="slider-thumbs__img" width="260"
+              height="100">
+          </li>
+
+          <li class="slider-thumbs__item swiper-slide">
+            <img src="photo/photo02-thumbs.jpg" alt="Фрагмент из фильма" class="slider-thumbs__img" width="260"
+              height="100">
+          </li>
+
+          <li class="slider-thumbs__item swiper-slide">
+            <img src="photo/photo03-thumbs.jpg" alt="Фрагмент из фильма" class="slider-thumbs__img" width="260"
+              height="100">
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
