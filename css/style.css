@@ -83,7 +83,10 @@ h6 {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  z-index: 600;
 }
+
+
 
 .navigation__list {
   display: flex;
@@ -216,7 +219,8 @@ h6 {
 }
 
 .footer {
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,13 +230,13 @@ h6 {
   text-transform: uppercase;
   position: relative;
   z-index: 500;
-  height: 75px;
+  height: 50px;
 }
 
 .footer__links {
   display: flex;
   gap: 21px;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
 }
 
 .footer__copiright {
@@ -240,7 +244,7 @@ h6 {
 }
 /*//////////////////*/
 .main__slider {
-  height: calc(100% - 120px);
+  height: calc(100% - 100px);
 }
 
 .slider-main {
