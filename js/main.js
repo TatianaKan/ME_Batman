@@ -59,6 +59,13 @@ try {
       videos[i].pause();
     }
   });
+
+  const pagination = document.querySelector('.pagination');
+  const paginationBtn = document.querySelector('.pagination__array');
+
+  paginationBtn.addEventListener('click', ()=> {
+    pagination.classList.toggle('pagination_active');
+  })
 }
 catch {
 }
